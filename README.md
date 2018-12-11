@@ -19,39 +19,160 @@ int main () {
     string FR1game1T;
     string FR1game2T;
 
+    //Semi-Finals
+    int SFgame1;
+    int SFgame2;
+    int SFgame3;
+    int SFgame4;
+    string FSFgame1;
+    string FSFgame2;
+    string FSFgame3;
+    string FSFgame4;
+
+    //Quarter-Finals
+    int QFgame1;
+    int QFgame2;
+    int QFgame3;
+    int QFgame4;
+    int QFgame5;
+    int QFgame6;
+    int QFgame7;
+    int QFgame8;
+    string FQFgame1;
+    string FQFgame2;
+    string FQFgame3;
+    string FQFgame4;
+    string FQFgame5;
+    string FQFgame6;
+    string FQFgame7;
+    string FQFgame8;
+
     //Qualified teams
     
     //Qulified in 1st place from group A
     int Q1groupA;
     string FQ1groupA;
 
+    //Qualified in 2nd place from group A
+    int Q2groupA;
+    string FQ2groupA;
 
     //Qulified in 1st place from group B
     int Q1groupB;
     string FQ1groupB;
 
-    //Qualified in 2nd place from group A
-    int Q2groupA;
-    string FQ2groupA;
-
     //Qualified in 2nd place from group B
     int Q2groupB;
     string FQ2groupB;
+
+    //Qulified in 1st place from group C
+    int Q1groupC;
+    string FQ1groupC;
+
+    //Qualified in 2nd place from group C
+    int Q2groupC;
+    string FQ2groupC;
+
+    //Qulified in 1st place from group D
+    int Q1groupD;
+    string FQ1groupD;
+
+    //Qualified in 2nd place from group D
+    int Q2groupD;
+    string FQ2groupD;
+
+    //Qulified in 1st place from group E
+    int Q1groupE;
+    string FQ1groupE;
+
+    //Qualified in 2nd place from group E
+    int Q2groupE;
+    string FQ2groupE;
+
+    //Qulified in 1st place from group F
+    int Q1groupF;
+    string FQ1groupF;
+
+    //Qualified in 2nd place from group F
+    int Q2groupF;
+    string FQ2groupF;
+
+    //Qulified in 1st place from group G
+    int Q1groupG;
+    string FQ1groupG;
+
+    //Qualified in 2nd place from group G
+    int Q2groupG;
+    string FQ2groupG;
+
+    //Qulified in 1st place from group H
+    int Q1groupH;
+    string FQ1groupH;
+
+    //Qualified in 2nd place from group H
+    int Q2groupH;
+    string FQ2groupH;
     
-    //Qualified teams' attack, midfield, deffence of round 1
-    int Q1groupAattack, Q1groupBattack, Q2groupAattack, Q2groupBattack;
-    int Q1groupAmidfield, Q1groupBmidfield, Q2groupAmidfield, Q2groupBmidfield;
-    int Q1groupAdeffence, Q1groupBdeffence, Q2groupAdeffence, Q2groupBdeffence;
     
-    //Finals teams' attack, midfield, deffence of round 1
+    //Qualified teams' attack, midfield, deffence, factor of unexpectancy, currency in Euros, popuplation, # of goals score in last 5 games, # of goals conceded in last 5 games, # of victories in last 5 games, # of defeats in last 5 games of round 1
+    int Q1groupAattack, Q1groupBattack, Q1groupCattack, Q1groupDattack, Q1groupEattack, Q1groupFattack, Q1groupGattack, Q1groupHattack, Q2groupAattack, Q2groupBattack, Q2groupCattack, Q2groupDattack, Q2groupEattack, Q2groupFattack, Q2groupGattack, Q2groupHattack;
+    int Q1groupAmidfield, Q1groupBmidfield, Q1groupCmidfield, Q1groupDmidfield, Q1groupEmidfield, Q1groupFmidfield, Q1groupGmidfield, Q1groupHmidfield, Q2groupAmidfield, Q2groupBmidfield, Q2groupCmidfield, Q2groupDmidfield, Q2groupEmidfield, Q2groupFmidfield, Q2groupGmidfield, Q2groupHmidfield;
+    int Q1groupAdeffence, Q1groupBdeffence, Q1groupCdeffence, Q1groupDdeffence, Q1groupEdeffence, Q1groupFdeffence, Q1groupGdeffence, Q1groupHdeffence, Q2groupAdeffence, Q2groupBdeffence, Q2groupCdeffence, Q2groupDdeffence, Q2groupEdeffence, Q2groupFdeffence, Q2groupGdeffence, Q2groupHdeffence;
+    int Q1groupAf, Q1groupBf, Q1groupCf, Q1groupDf, Q1groupEf, Q1groupFf, Q1groupGf, Q1groupHf, Q2groupAf, Q2groupBf, Q2groupCf, Q2groupDf, Q2groupEf, Q2groupFf, Q2groupGf, Q2groupHf;
+    int Q1groupAcost, Q1groupBcost, Q1groupCcost, Q1groupDcost, Q1groupEcost, Q1groupFcost, Q1groupGcost, Q1groupHcost, Q2groupAcost, Q2groupBcost, Q2groupCcost, Q2groupDcost, Q2groupEcost, Q2groupFcost, Q2groupGcost, Q2groupHcost;
+    int Q1groupApop, Q1groupBpop, Q1groupCpop, Q1groupDpop, Q1groupEpop, Q1groupFpop, Q1groupGpop, Q1groupHpop, Q2groupApop, Q2groupBpop, Q2groupCpop, Q2groupDpop, Q2groupEpop, Q2groupFpop, Q2groupGpop, Q2groupHpop;
+    int Q1groupA5, Q1groupB5, Q1groupC5, Q1groupD5, Q1groupE5, Q1groupF5, Q1groupG5, Q1groupH5, Q2groupA5, Q2groupB5, Q2groupC5, Q2groupD5, Q2groupE5, Q2groupF5, Q2groupG5, Q2groupH5;
+    int Q1groupAC5, Q1groupBC5, Q1groupCC5, Q1groupDC5, Q1groupEC5, Q1groupFC5, Q1groupGC5, Q1groupHC5, Q2groupAC5, Q2groupBC5, Q2groupCC5, Q2groupDC5, Q2groupEC5, Q2groupFC5, Q2groupGC5, Q2groupHC5;
+    int Q1groupAV5, Q1groupBV5, Q1groupCV5, Q1groupDV5, Q1groupEV5, Q1groupFV5, Q1groupGV5, Q1groupHV5, Q2groupAV5, Q2groupBV5, Q2groupCV5, Q2groupDV5, Q2groupEV5, Q2groupFV5, Q2groupGV5, Q2groupHV5;
+    int Q1groupAD5, Q1groupBD5, Q1groupCD5, Q1groupDD5, Q1groupED5, Q1groupFD5, Q1groupGD5, Q1groupHD5, Q2groupAD5, Q2groupBD5, Q2groupCD5, Q2groupDD5, Q2groupED5, Q2groupFD5, Q2groupGD5, Q2groupHD5;
+    
+    //Quarter-finals teams' attack, midfield, deffence, factor of unexpectancy, currency in Euros, popuplation, # of goals score in last 5 games, # of goals conceded in last 5 games, # of victories in last 5 games, # of defeats in last 5 games
+    int QFgame1attack, QFgame2attack, QFgame3attack, QFgame4attack, QFgame5attack, QFgame6attack, QFgame7attack, QFgame8attack;
+    int QFgame1midfield, QFgame2midfield, QFgame3midfield, QFgame4midfield, QFgame5midfield, QFgame6midfield, QFgame7midfield, QFgame8midfield;
+    int QFgame1deffence, QFgame2deffence, QFgame3deffence, QFgame4deffence, QFgame5deffence, QFgame6deffence, QFgame7deffence, QFgame8deffence;
+    int QFgame1f, QFgame2f, QFgame3f, QFgame4f, QFgame5f, QFgame6f, QFgame7f, QFgame8f;
+    int QFgame1cost, QFgame2cost, QFgame3cost, QFgame4cost, QFgame5cost, QFgame6cost, QFgame7cost, QFgame8cost;
+    int QFgame1pop, QFgame2pop, QFgame3pop, QFgame4pop, QFgame5pop, QFgame6pop, QFgame7pop, QFgame8pop;
+    int QFgame15, QFgame25, QFgame35, QFgame45, QFgame55, QFgame65, QFgame75, QFgame85;
+    int QFgame1C5, QFgame2C5, QFgame3C5, QFgame4C5, QFgame5C5, QFgame6C5, QFgame7C5, QFgame8C5;
+    int QFgame1V5, QFgame2V5, QFgame3V5, QFgame4V5, QFgame5V5, QFgame6V5, QFgame7V5, QFgame8V5;
+    int QFgame1D5, QFgame2D5, QFgame3D5, QFgame4D5, QFgame5D5, QFgame6D5, QFgame7D5, QFgame8D5;
+
+    //Semi-finals teams' attack, midfield, deffence, factor of unexpectancy, currency in Euros, popuplation, # of goals score in last 5 games, # of goals conceded in last 5 games, # of victories in last 5 games, # of defeats in last 5 games
+    int SFgame1attack, SFgame2attack, SFgame3attack, SFgame4attack;
+    int SFgame1midfield, SFgame2midfield, SFgame3midfield, SFgame4midfield;
+    int SFgame1deffence, SFgame2deffence, SFgame3deffence, SFgame4deffence;
+    int SFgame1f, SFgame2f, SFgame3f, SFgame4f;
+    int SFgame1cost, SFgame2cost, SFgame3cost, SFgame4cost;
+    int SFgame1pop, SFgame2pop, SFgame3pop, SFgame4pop;
+    int SFgame15, SFgame25, SFgame35, SFgame45;
+    int SFgame1C5, SFgame2C5, SFgame3C5, SFgame4C5;
+    int SFgame1V5, SFgame2V5, SFgame3V5, SFgame4V5;
+    int SFgame1D5, SFgame2D5, SFgame3D5, SFgame4D5;
+
+    //Finals teams' attack, midfield, deffence, factor of unexpectancy, currency in Euros, popuplation, # of goals score in last 5 games, # of goals conceded in last 5 games, # of victories in last 5 games, # of defeats in last 5 games
     int R1game1Fattack, R1game2Fattack;
     int R1game1Fmidfield, R1game2Fmidfield;
     int R1game1Fdeffence, R1game2Fdeffence;
+    int R1game1Ff, R1game2Ff;
+    int R1game1Fcost, R1game2Fcost;
+    int R1game1Fpop, R1game2Fpop;
+    int R1game1F5, R1game2F5;
+    int R1game1FC5, R1game2FC5;
+    int R1game1FV5, R1game2FV5;
+    int R1game1FD5, R1game2FD5;
 
-    //Match for third place teams' attack, midfield, deffence of round 1
+    //Match for third place teams' attack, midfield, deffence, factor of unexpectancy, currency in Euros, popuplation, # of goals score in last 5 games, # of goals conceded in last 5 games, # of victories in last 5 games, # of defeats in last 5 games
     int R1game1Tattack, R1game2Tattack;
     int R1game1Tmidfield, R1game2Tmidfield;
     int R1game1Tdeffence, R1game2Tdeffence;
+    int R1game1Tf, R1game2Tf;
+    int R1game1Tcost, R1game2Tcost;
+    int R1game1Tpop, R1game2Tpop;
+    int R1game1T5, R1game2T5;
+    int R1game1TC5, R1game2TC5;
+    int R1game1TV5, R1game2TV5;
+    int R1game1TD5, R1game2TD5;
 
     //group A (Italy, Portugal, Australia, Iran)
 
@@ -90,29 +211,7 @@ int main () {
     double australiapop = 24912343;
     double iranpop = 24912343;
 
-    //# of goals scored in last 15 games
-    int italy15 = 9;
-    int portugal15 = 22;
-    int australia15 = 23;
-    int iran15 = 18;
-
-    //# of goals conceded in last 15 games
-    int italyC15 = 13;
-    int portugalC15 = 17;
-    int australiaC15 = 17;
-    int iranC15 = 10;
-
-    //# of victories in last 15 games
-    int italyV15 = 4;
-    int portugalV15 = 6;
-    int australiaV15 = 6;
-    int iranV15 = 8;
-
-    //# of defeats in last 15 games
-    int italyD15 = 4;
-    int portugalD15 = 2;
-    int australiaD15 = 4;
-    int iranD15 = 3;
+    
 
     //# of goals score in last 5 games
     int italy5 = 3;
@@ -175,29 +274,7 @@ int main () {
     double denmarkpop = 5763620;
     double columbiapop = 49635457;
     
-    //# of goals scored in last 15 games
-    int croatia15 = 24;
-    int belgium15 = 37;
-    int denmark15 = 17;
-    int columbia15 = 21;
-
-    //# of goals conceded in last 15 games
-    int croatiaC15 = 15;
-    int belgiumC15 = 14;
-    int denmarkC15 = 7;
-    int columbiaC15 = 14;
-
-    //# of victories in last 15 games
-    int croatiaV15 = 9;
-    int belgiumV15 = 12;
-    int denmarkV15 = 7;
-    int columbiaV15 = 8;
-
-    //# of defeats in last 15 games
-    int croatiaD15 = 4;
-    int belgiumD15 = 2;
-    int denmarkD15 = 2;
-    int columbiaD15 = 4;
+    
 
     //# of goals score in last 5 games
     int croatia5 = 6;
@@ -222,6 +299,120 @@ int main () {
     int belgiumD5 = 1;
     int denmarkD5 = 0;
     int columbiaD5 = 1;
+
+    //group C (Chile, Sweden, Netherlands, Mexico)
+
+int chile = 0, sweden = 0, netherlands = 0, mexico = 0;
+
+int chileattack = 85;
+int swedenattack = 84;
+int netherlandsattack = 92;
+int mexicoattack = 87;
+
+int chilemidfield = 80;
+int swedenmidfield = 85;
+int netherlandsmidfield = 86;
+int mexicomidfield = 84;
+
+int chiledeffence = 75;
+int swedendeffence = 80;
+int netherlandsdeffence = 85;
+int mexicodeffence = 80;
+
+//group D (Wales, Poland, USA, Peru)
+
+int wales = 0, poland = 0, usa = 0, peru = 0;
+
+int walesattack = 70;
+int polandattack = 70;
+int usaattack = 65;
+int peruattack = 75;
+
+int walesmidfield = 70;
+int polandmidfield = 75;
+int usamidfield = 68;
+int perumidfield = 75;
+
+int walesdeffence = 72;
+int polanddeffence = 79;
+int usadeffence = 80;
+int perudeffence = 78;
+ 
+ //group E (Brazil, Germany, Senegal, Austria)
+
+ int brazil = 0, germany = 0, senegal = 0, austria = 0;
+
+ int brazilattack = 90;
+ int germanyattack = 95;
+ int senegalattack = 70;
+ int austriaattack = 75;
+
+ int brazilmidfield = 95;
+ int germanymidfield = 90;
+ int senegalmidfield = 88;
+ int austriamidfield = 80;
+
+ int brazildeffence = 90;
+ int germanydeffence = 95;
+ int senegaldeffence = 90;
+ int austriadeffence = 75;
+
+ //group F (Romania, Iceland, England, Spain)
+
+ int romania = 0, iceland = 0, england = 0, spain = 0;
+
+ int romaniaattack = 78;
+ int icelandattack = 75;
+ int englandattack = 90;
+ int spainattack = 90;
+
+ int romaniamidfield = 75;
+ int icelandmidfield = 80;
+ int englandmidfield = 93;
+ int spainmidfield = 95;
+
+ int romaniadeffence = 80;
+ int icelanddeffence = 79;
+ int englanddeffence = 90;
+ int spaindeffence = 95;
+
+ //group G (Argentina, France, Turkey, Russia) 
+
+ int argentina = 0, france = 0, turkey = 0, russia = 0
+
+ int argentinaattack = 95;
+ int franceattack = 95;
+ int turkeyattack = 70;
+ int russiaattack = 70;
+
+ int argentinamidfield = 90;
+ int francemidfield = 95;
+ int turkeymidfield = 92;
+ int russiamidfield = 80;
+
+ int argentinadeffence = 90;
+ int francedeffence = 90;
+ int turkeydeffence = 80;
+ int russiadeffence = 70;
+
+ //group H (Uruguay, Serbia, Venezuela, Morocco)
+
+ int uruguay = 0, serbia = 0, venezuela = 0, morocco = 0;
+
+ int uruguayattack = 90;
+ int serbiaattack = 60;
+ int venezuelaattack = 80;
+ int moroccoattack = 70;
+
+ int uruguaymidfield = 85;
+ int serbiamidfield = 90;
+ int venezuelamidfield = 70;
+ int moroccomidfield = 70;
+
+ int uruguaydeffence = 80;
+ int serbiadeffence = 80;
+ int venezueladeffence = 80;
+ int moroccodeffence = 75;
 
     //group B
 
@@ -486,213 +677,7 @@ int main () {
         croatia += 1;
     }
 
-    //croatia # of goals scored in last 15 games
-    if (croatia15 > belgium15) {
-        croatia += 1;
-    }
     
-    if (croatia15 > denmark15) {
-        croatia += 1;
-    }
-
-    if (croatia15 > columbia15) {
-        croatia += 1;
-    }
-
-    //belgium # of goals scored in last 15 games
-    if (belgium15 > croatia15) {
-        belgium += 1;
-    }
-    
-    if (belgium15 > denmark15) {
-        belgium += 1;
-    }
-
-    if (belgium15 > columbia15) {
-        belgium += 1;
-    }
-
-    //denmark # of goals scored in last 15 games
-    if (denmark15 > croatia15) {
-        denmark += 1;
-    }
-    
-    if (denmark15 > belgium15) {
-        denmark += 1;
-    }
-
-    if (denmark15 > columbia15) {
-        denmark += 1;
-    }
-
-    //columbia # of goals scored in last 15 games
-    if (columbia15 > croatia15) {
-        columbia += 1;
-    }
-    
-    if (columbia15 > belgium15) {
-        columbia += 1;
-    }
-
-    if (columbia15 > denmark15) {
-        columbia += 1;
-    }
-
-    //columbia # of goals conceded in last 15 games
-    if (columbiaC15 > denmarkC15) {
-        columbia -= 1;
-    }
-    
-    if (columbiaC15 > belgiumC15) {
-        columbia -= 1;
-    }
-
-    if (columbiaC15 > croatiaC15) {
-        columbia -= 1;
-    }
-
-    //denmark # of goals conceded in last 15 games
-    if (denmarkC15 > columbiaC15) {
-        denmark -= 1;
-    }
-    
-    if (denmarkC15 > belgiumC15) {
-        denmark -= 1;
-    }
-
-    if (denmarkC15 > croatiaC15) {
-        denmark -= 1;
-    }
-
-    //belgium # of goals conceded in last 15 games
-    if (belgiumC15 > columbiaC15) {
-        belgium -= 1;
-    }
-    
-    if (belgiumC15 > denmarkC15) {
-        belgium -= 1;
-    }
-
-    if (belgiumC15 > croatiaC15) {
-        belgium -= 1;
-    }
-
-    //croatia # of goals conceded in last 15 games
-    if (croatiaC15 > columbiaC15) {
-        croatia -= 1;
-    }
-    
-    if (croatiaC15 > denmarkC15) {
-        croatia -= 1;
-    }
-
-    if (croatiaC15 > belgiumC15) {
-        croatia -= 1;
-    }
-
-    //croatia # of victories in last 15 games
-    if (croatiaV15 > belgiumV15) {
-        croatia += 1;
-    }
-    
-    if (croatiaV15 > denmarkV15) {
-        croatia += 1;
-    }
-
-    if (croatiaV15 > columbiaV15) {
-        croatia += 1;
-    }
-
-    //belgium # of victories in last 15 games
-    if (belgiumV15 > croatiaV15) {
-        belgium += 1;
-    }
-    
-    if (belgiumV15 > denmarkV15) {
-        belgium += 1;
-    }
-
-    if (belgiumV15 > columbiaV15) {
-        belgium += 1;
-    }
-
-    //denmark # of victories in last 15 games
-    if (denmarkV15 > croatiaV15) {
-        denmark += 1;
-    }
-    
-    if (denmarkV15 > belgiumV15) {
-        denmark += 1;
-    }
-
-    if (denmarkV15 > columbiaV15) {
-        denmark += 1;
-    }
-
-    //columbia # of victories in last 15 games
-    if (columbiaV15 > croatiaV15) {
-        columbia += 1;
-    }
-    
-    if (columbiaV15 > belgiumV15) {
-        columbia += 1;
-    }
-
-    if (columbiaV15 > denmarkV15) {
-        columbia += 1;
-    }
-
-    //columbia # of defeats in last 15 games
-    if (columbiaD15 > denmarkD15) {
-        columbia -= 1;
-    }
-    
-    if (columbiaD15 > belgiumD15) {
-        columbia -= 1;
-    }
-
-    if (columbiaD15 > croatiaD15) {
-        columbia -= 1;
-    }
-
-    //denmark # of defeats in last 15 games
-    if (denmarkD15 > columbiaD15) {
-        denmark -= 1;
-    }
-    
-    if (denmarkD15 > belgiumD15) {
-        denmark -= 1;
-    }
-
-    if (denmarkD15 > croatiaD15) {
-        denmark -= 1;
-    }
-
-    //belgium # of defeats in last 15 games
-    if (belgiumD15 > columbiaD15) {
-        belgium -= 1;
-    }
-    
-    if (belgiumD15 > denmarkD15) {
-        belgium -= 1;
-    }
-
-    if (belgiumD15 > croatiaD15) {
-        belgium -= 1;
-    }
-
-    //croatia # of defeats in last 15 games
-    if (croatiaD15 > columbiaD15) {
-        croatia -= 1;
-    }
-    
-    if (croatiaD15 > denmarkD15) {
-        croatia -= 1;
-    }
-
-    if (croatiaD15 > belgiumD15) {
-        croatia -= 1;
-    }
 
     //croatia # of goals score in last 5 games
     if (croatia5 > belgium5) {
@@ -954,14 +939,22 @@ int main () {
         columbia += 4;
     }
 
-
-    //1st place results
+    
+    
+    //1st place results of group B
     if (columbia > denmark && columbia > croatia && columbia > belgium) {
         cout << "Columbia is the winner of Group B" << endl;
         Q1groupB = columbia;
         Q1groupBattack = columbiaattack;
         Q1groupBmidfield = columbiamidfield;
         Q1groupBdeffence = columbiadeffence;
+        Q1groupBf = fcolumbia;
+        Q1groupBcost = columbiacost;
+        Q1groupBpop = columbiapop;
+        Q1groupB5 = columbia5;
+        Q1groupBC5 = columbiaC5;
+        Q1groupBV5 = columbiaV5;
+        Q1groupBD5 = columbiaD5;
         FQ1groupB = "Columbia";
     }
 
@@ -971,6 +964,13 @@ int main () {
         Q1groupBattack = denmarkattack;
         Q1groupBmidfield = denmarkmidfield;
         Q1groupBdeffence = denmarkdeffence;
+        Q1groupBf = fdenmark;
+        Q1groupBcost = denmarkcost;
+        Q1groupBpop = denmarkpop;
+        Q1groupB5 = denmark5;
+        Q1groupBC5 = denmarkC5;
+        Q1groupBV5 = denmarkV5;
+        Q1groupBD5 = denmarkD5;
         FQ1groupB = "Denmark";
     }
 
@@ -980,6 +980,13 @@ int main () {
         Q1groupBattack = croatiaattack;
         Q1groupBmidfield = croatiamidfield;
         Q1groupBdeffence = croatiadeffence;
+        Q1groupBf = fcroatia;
+        Q1groupBcost = croatiacost;
+        Q1groupBpop = croatiapop;
+        Q1groupB5 = croatia5;
+        Q1groupBC5 = croatiaC5;
+        Q1groupBV5 = croatiaV5;
+        Q1groupBD5 = croatiaD5;
         FQ1groupB = "Croatia";
     }
 
@@ -989,12 +996,20 @@ int main () {
         Q1groupBattack = belgiumattack;
         Q1groupBmidfield = belgiummidfield;
         Q1groupBdeffence = belgiumdeffence;
+        Q1groupBf = fbelgium;
+        Q1groupBcost = belgiumcost;
+        Q1groupBpop = belgiumpop;
+        Q1groupB5 = belgium5;
+        Q1groupBC5 = belgiumC5;
+        Q1groupBV5 = belgiumV5;
+        Q1groupBD5 = belgiumD5;
         FQ1groupB = "Belgium";
     }
 
     else {}
-
-    //2nd place results
+    
+    
+    //2nd place results of group B
    
     //Columbia
     if (columbia > denmark && columbia > croatia && columbia < belgium) {
@@ -1003,6 +1018,13 @@ int main () {
         Q2groupBattack = columbiaattack;
         Q2groupBmidfield = columbiamidfield;
         Q2groupBdeffence = columbiadeffence;
+        Q2groupBf = fcolumbia;
+        Q2groupBcost = columbiacost;
+        Q2groupBpop = columbiapop;
+        Q2groupB5 = columbia5;
+        Q2groupBC5 = columbiaC5;
+        Q2groupBV5 = columbiaV5;
+        Q2groupBD5 = columbiaD5;
         FQ2groupB = "Columbia";
     }
 
@@ -1012,6 +1034,13 @@ int main () {
         Q2groupBattack = columbiaattack;
         Q2groupBmidfield = columbiamidfield;
         Q2groupBdeffence = columbiadeffence;
+        Q2groupBf = fcolumbia;
+        Q2groupBcost = columbiacost;
+        Q2groupBpop = columbiapop;
+        Q2groupB5 = columbia5;
+        Q2groupBC5 = columbiaC5;
+        Q2groupBV5 = columbiaV5;
+        Q2groupBD5 = columbiaD5;
         FQ2groupB = "Columbia";
     }
 
@@ -1021,6 +1050,13 @@ int main () {
         Q2groupBattack = columbiaattack;
         Q2groupBmidfield = columbiamidfield;
         Q2groupBdeffence = columbiadeffence;
+        Q2groupBf = fcolumbia;
+        Q2groupBcost = columbiacost;
+        Q2groupBpop = columbiapop;
+        Q2groupB5 = columbia5;
+        Q2groupBC5 = columbiaC5;
+        Q2groupBV5 = columbiaV5;
+        Q2groupBD5 = columbiaD5;
         FQ2groupB = "Columbia";
     }
 
@@ -1033,6 +1069,13 @@ int main () {
         Q2groupBattack = denmarkattack;
         Q2groupBmidfield = denmarkmidfield;
         Q2groupBdeffence = denmarkdeffence;
+        Q2groupBf = fdenmark;
+        Q2groupBcost = denmarkcost;
+        Q2groupBpop = denmarkpop;
+        Q2groupB5 = denmark5;
+        Q2groupBC5 = denmarkC5;
+        Q2groupBV5 = denmarkV5;
+        Q2groupBD5 = denmarkD5;
         FQ2groupB = "Denmark";
     }
 
@@ -1042,6 +1085,13 @@ int main () {
         Q2groupBattack = denmarkattack;
         Q2groupBmidfield = denmarkmidfield;
         Q2groupBdeffence = denmarkdeffence;
+        Q2groupBf = fdenmark;
+        Q2groupBcost = denmarkcost;
+        Q2groupBpop = denmarkpop;
+        Q2groupB5 = denmark5;
+        Q2groupBC5 = denmarkC5;
+        Q2groupBV5 = denmarkV5;
+        Q2groupBD5 = denmarkD5;
         FQ2groupB = "Denmark";
     }
 
@@ -1051,6 +1101,13 @@ int main () {
         Q2groupBattack = denmarkattack;
         Q2groupBmidfield = denmarkmidfield;
         Q2groupBdeffence = denmarkdeffence;
+        Q2groupBf = fdenmark;
+        Q2groupBcost = denmarkcost;
+        Q2groupBpop = denmarkpop;
+        Q2groupB5 = denmark5;
+        Q2groupBC5 = denmarkC5;
+        Q2groupBV5 = denmarkV5;
+        Q2groupBD5 = denmarkD5;
         FQ2groupB = "Denmark";
     }
 
@@ -1063,6 +1120,13 @@ int main () {
         Q2groupBattack = croatiaattack;
         Q2groupBmidfield = croatiamidfield;
         Q2groupBdeffence = croatiadeffence;
+        Q2groupBf = fcroatia;
+        Q2groupBcost = croatiacost;
+        Q2groupBpop = croatiapop;
+        Q2groupB5 = croatia5;
+        Q2groupBC5 = croatiaC5;
+        Q2groupBV5 = croatiaV5;
+        Q2groupBD5 = croatiaD5;
         FQ2groupB = "Croatia";
     }
 
@@ -1072,6 +1136,13 @@ int main () {
         Q2groupBattack = croatiaattack;
         Q2groupBmidfield = croatiamidfield;
         Q2groupBdeffence = croatiadeffence;
+        Q2groupBf = fcroatia;
+        Q2groupBcost = croatiacost;
+        Q2groupBpop = croatiapop;
+        Q2groupB5 = croatia5;
+        Q2groupBC5 = croatiaC5;
+        Q2groupBV5 = croatiaV5;
+        Q2groupBD5 = croatiaD5;
         FQ2groupB = "Croatia";
     }
 
@@ -1081,6 +1152,13 @@ int main () {
         Q2groupBattack = croatiaattack;
         Q2groupBmidfield = croatiamidfield;
         Q2groupBdeffence = croatiadeffence;
+        Q2groupBf = fcroatia;
+        Q2groupBcost = croatiacost;
+        Q2groupBpop = croatiapop;
+        Q2groupB5 = croatia5;
+        Q2groupBC5 = croatiaC5;
+        Q2groupBV5 = croatiaV5;
+        Q2groupBD5 = croatiaD5;
         FQ2groupB = "Croatia";
     }
 
@@ -1093,6 +1171,13 @@ int main () {
         Q2groupBattack = belgiumattack;
         Q2groupBmidfield = belgiummidfield;
         Q2groupBdeffence = belgiumdeffence;
+        Q2groupBf = fbelgium;
+        Q2groupBcost = belgiumcost;
+        Q2groupBpop = belgiumpop;
+        Q2groupB5 = belgium5;
+        Q2groupBC5 = belgiumC5;
+        Q2groupBV5 = belgiumV5;
+        Q2groupBD5 = belgiumD5;
         FQ2groupB = "Belgium";
     }
 
@@ -1102,6 +1187,13 @@ int main () {
         Q2groupBattack = belgiumattack;
         Q2groupBmidfield = belgiummidfield;
         Q2groupBdeffence = belgiumdeffence;
+        Q2groupBf = fbelgium;
+        Q2groupBcost = belgiumcost;
+        Q2groupBpop = belgiumpop;
+        Q2groupB5 = belgium5;
+        Q2groupBC5 = belgiumC5;
+        Q2groupBV5 = belgiumV5;
+        Q2groupBD5 = belgiumD5;
         FQ2groupB = "Belgium";
     }
 
@@ -1111,6 +1203,13 @@ int main () {
         Q2groupBattack = belgiumattack;
         Q2groupBmidfield = belgiummidfield;
         Q2groupBdeffence = belgiumdeffence;
+        Q2groupBf = fbelgium;
+        Q2groupBcost = belgiumcost;
+        Q2groupBpop = belgiumpop;
+        Q2groupB5 = belgium5;
+        Q2groupBC5 = belgiumC5;
+        Q2groupBV5 = belgiumV5;
+        Q2groupBD5 = belgiumD5;
         FQ2groupB = "Belgium";
     }
 
@@ -1382,213 +1481,7 @@ int main () {
         italy += 1;
     }
 
-    //Italy # of goals scored in last 15 games
-    if (italy15 > portugal15) {
-        italy += 1;
-    }
     
-    if (italy15 > australia15) {
-        italy += 1;
-    }
-
-    if (italy15 > iran15) {
-        italy += 1;
-    }
-
-    //Portugal # of goals scored in last 15 games
-    if (portugal15 > italy15) {
-        portugal += 1;
-    }
-    
-    if (portugal15 > australia15) {
-        portugal += 1;
-    }
-
-    if (portugal15 > iran15) {
-        portugal += 1;
-    }
-
-    //australia # of goals scored in last 15 games
-    if (australia15 > italy15) {
-        australia += 1;
-    }
-    
-    if (australia15 > portugal15) {
-        australia += 1;
-    }
-
-    if (australia15 > iran15) {
-        australia += 1;
-    }
-
-    //iran # of goals scored in last 15 games
-    if (iran15 > italy15) {
-        iran += 1;
-    }
-    
-    if (iran15 > portugal15) {
-        iran += 1;
-    }
-
-    if (iran15 > australia15) {
-        iran += 1;
-    }
-
-    //iran # of goals conceded in last 15 games
-    if (iranC15 > australiaC15) {
-        iran -= 1;
-    }
-    
-    if (iranC15 > portugalC15) {
-        iran -= 1;
-    }
-
-    if (iranC15 > italyC15) {
-        iran -= 1;
-    }
-
-    //australia # of goals conceded in last 15 games
-    if (australiaC15 > iranC15) {
-        australia -= 1;
-    }
-    
-    if (australiaC15 > portugalC15) {
-        australia -= 1;
-    }
-
-    if (australiaC15 > italyC15) {
-        australia -= 1;
-    }
-
-    //portugal # of goals conceded in last 15 games
-    if (portugalC15 > iranC15) {
-        portugal -= 1;
-    }
-    
-    if (portugalC15 > australiaC15) {
-        portugal -= 1;
-    }
-
-    if (portugalC15 > italyC15) {
-        portugal -= 1;
-    }
-
-    //italy # of goals conceded in last 15 games
-    if (italyC15 > iranC15) {
-        italy -= 1;
-    }
-    
-    if (italyC15 > australiaC15) {
-        italy -= 1;
-    }
-
-    if (italyC15 > portugalC15) {
-        italy -= 1;
-    }
-
-    //italy # of victories in last 15 games
-    if (italyV15 > portugalV15) {
-        italy += 1;
-    }
-    
-    if (italyV15 > australiaV15) {
-        italy += 1;
-    }
-
-    if (italyV15 > iranV15) {
-        italy += 1;
-    }
-
-    //portugal # of victories in last 15 games
-    if (portugalV15 > italyV15) {
-        portugal += 1;
-    }
-    
-    if (portugalV15 > australiaV15) {
-        portugal += 1;
-    }
-
-    if (portugalV15 > iranV15) {
-        portugal += 1;
-    }
-
-    //australia # of victories in last 15 games
-    if (australiaV15 > italyV15) {
-        australia += 1;
-    }
-    
-    if (australiaV15 > portugalV15) {
-        australia += 1;
-    }
-
-    if (australiaV15 > iranV15) {
-        australia += 1;
-    }
-
-    //iran # of victories in last 15 games
-    if (iranV15 > italyV15) {
-        iran += 1;
-    }
-    
-    if (iranV15 > portugalV15) {
-        iran += 1;
-    }
-
-    if (iranV15 > australiaV15) {
-        iran += 1;
-    }
-
-    //iran # of defeats in last 15 games
-    if (iranD15 > australiaD15) {
-        iran -= 1;
-    }
-    
-    if (iranD15 > portugalD15) {
-        iran -= 1;
-    }
-
-    if (iranD15 > italyD15) {
-        iran -= 1;
-    }
-
-    //australia # of defeats in last 15 games
-    if (australiaD15 > iranD15) {
-        australia -= 1;
-    }
-    
-    if (australiaD15 > portugalD15) {
-        australia -= 1;
-    }
-
-    if (australiaD15 > italyD15) {
-        australia -= 1;
-    }
-
-    //portugal # of defeats in last 15 games
-    if (portugalD15 > iranD15) {
-        portugal -= 1;
-    }
-    
-    if (portugalD15 > australiaD15) {
-        portugal -= 1;
-    }
-
-    if (portugalD15 > italyD15) {
-        portugal -= 1;
-    }
-
-    //italy # of defeats in last 15 games
-    if (italyD15 > iranD15) {
-        italy -= 1;
-    }
-    
-    if (italyD15 > australiaD15) {
-        italy -= 1;
-    }
-
-    if (italyD15 > portugalD15) {
-        italy -= 1;
-    }
 
     //italy # of goals score in last 5 games
     if (italy5 > portugal5) {
@@ -1852,6 +1745,8 @@ int main () {
 
     //portugal factor of unexpectancy
 
+
+    
     //1st place results
     if (italy > portugal && italy > australia && italy > iran) {
         cout << "Italy is the winner of Group A" << endl;
@@ -1859,6 +1754,13 @@ int main () {
         Q1groupAattack = italyattack;
         Q1groupAmidfield = italymidfield;
         Q1groupAdeffence = italydeffence;
+        Q1groupAf = fitaly;
+        Q1groupAcost = italycost;
+        Q1groupApop = italypop;
+        Q1groupA5 = italy5;
+        Q1groupAC5 = italyC5;
+        Q1groupAV5 = italyV5;
+        Q1groupAD5 = italyD5;
         FQ1groupA = "Italy";
     }
 
@@ -1868,6 +1770,13 @@ int main () {
         Q1groupAattack = portugalattack;
         Q1groupAmidfield = portugalmidfield;
         Q1groupAdeffence = portugaldeffence;
+        Q1groupAf = fportugal;
+        Q1groupAcost = portugalcost;
+        Q1groupApop = portugalpop;
+        Q1groupA5 = portugal5;
+        Q1groupAC5 = portugalC5;
+        Q1groupAV5 = portugalV5;
+        Q1groupAD5 = portugalD5;
         FQ1groupA = "Portugal";
     }
 
@@ -1877,6 +1786,13 @@ int main () {
         Q1groupAattack = australiaattack;
         Q1groupAmidfield = australiamidfield;
         Q1groupAdeffence = australiadeffence;
+        Q1groupAf = faustralia;
+        Q1groupAcost = australiacost;
+        Q1groupApop = australiapop;
+        Q1groupA5 = australia5;
+        Q1groupAC5 = australiaC5;
+        Q1groupAV5 = australiaV5;
+        Q1groupAD5 = australiaD5;
         FQ1groupA = "Australia";
     }
 
@@ -1886,6 +1802,13 @@ int main () {
         Q1groupAattack = iranattack;
         Q1groupAmidfield = iranmidfield;
         Q1groupAdeffence = irandeffence;
+        Q1groupAf = firan;
+        Q1groupAcost = irancost;
+        Q1groupApop = iranpop;
+        Q1groupA5 = iran5;
+        Q1groupAC5 = iranC5;
+        Q1groupAV5 = iranV5;
+        Q1groupAD5 = iranD5;
         FQ1groupA = "Iran";
     }
 
@@ -1900,6 +1823,13 @@ int main () {
         Q2groupAattack = italyattack;
         Q2groupAmidfield = italymidfield;
         Q2groupAdeffence = italydeffence;
+        Q2groupAf = fitaly;
+        Q2groupAcost = italycost;
+        Q2groupApop = italypop;
+        Q2groupA5 = italy5;
+        Q2groupAC5 = italyC5;
+        Q2groupAV5 = italyV5;
+        Q2groupAD5 = italyD5;
         FQ2groupA = "Italy";
     }
 
@@ -1909,6 +1839,13 @@ int main () {
         Q2groupAattack = italyattack;
         Q2groupAmidfield = italymidfield;
         Q2groupAdeffence = italydeffence;
+        Q2groupAf = fitaly;
+        Q2groupAcost = italycost;
+        Q2groupApop = italypop;
+        Q2groupA5 = italy5;
+        Q2groupAC5 = italyC5;
+        Q2groupAV5 = italyV5;
+        Q2groupAD5 = italyD5;
         FQ2groupA = "Italy";
     }
 
@@ -1918,6 +1855,13 @@ int main () {
         Q2groupAattack = italyattack;
         Q2groupAmidfield = italymidfield;
         Q2groupAdeffence = italydeffence;
+        Q2groupAf = fitaly;
+        Q2groupAcost = italycost;
+        Q2groupApop = italypop;
+        Q2groupA5 = italy5;
+        Q2groupAC5 = italyC5;
+        Q2groupAV5 = italyV5;
+        Q2groupAD5 = italyD5;
         FQ2groupA = "Italy";
     }
 
@@ -1930,6 +1874,13 @@ int main () {
         Q2groupAattack = portugalattack;
         Q2groupAmidfield = portugalmidfield;
         Q2groupAdeffence = portugaldeffence;
+        Q1groupAf = fportugal;
+        Q1groupAcost = portugalcost;
+        Q1groupApop = portugalpop;
+        Q1groupA5 = portugal5;
+        Q1groupAC5 = portugalC5;
+        Q1groupAV5 = portugalV5;
+        Q1groupAD5 = portugalD5;
         FQ2groupA = "Portugal";
     }
 
@@ -1939,6 +1890,13 @@ int main () {
         Q2groupAattack = portugalattack;
         Q2groupAmidfield = portugalmidfield;
         Q2groupAdeffence = portugaldeffence;
+        Q1groupAf = fportugal;
+        Q1groupAcost = portugalcost;
+        Q1groupApop = portugalpop;
+        Q1groupA5 = portugal5;
+        Q1groupAC5 = portugalC5;
+        Q1groupAV5 = portugalV5;
+        Q1groupAD5 = portugalD5;
         FQ2groupA = "Portugal";
     }
 
@@ -1948,6 +1906,13 @@ int main () {
         Q2groupAattack = portugalattack;
         Q2groupAmidfield = portugalmidfield;
         Q2groupAdeffence = portugaldeffence;
+        Q1groupAf = fportugal;
+        Q1groupAcost = portugalcost;
+        Q1groupApop = portugalpop;
+        Q1groupA5 = portugal5;
+        Q1groupAC5 = portugalC5;
+        Q1groupAV5 = portugalV5;
+        Q1groupAD5 = portugalD5;
         FQ2groupA = "Portugal";
     }
 
@@ -1960,6 +1925,13 @@ int main () {
         Q2groupAattack = australiaattack;
         Q2groupAmidfield = australiamidfield;
         Q2groupAdeffence = australiadeffence;
+        Q1groupAf = faustralia;
+        Q1groupAcost = australiacost;
+        Q1groupApop = australiapop;
+        Q1groupA5 = australia5;
+        Q1groupAC5 = australiaC5;
+        Q1groupAV5 = australiaV5;
+        Q1groupAD5 = australiaD5;
         FQ2groupA = "Australia";
     }
 
@@ -1969,6 +1941,13 @@ int main () {
         Q2groupAattack = australiaattack;
         Q2groupAmidfield = australiamidfield;
         Q2groupAdeffence = australiadeffence;
+        Q1groupAf = faustralia;
+        Q1groupAcost = australiacost;
+        Q1groupApop = australiapop;
+        Q1groupA5 = australia5;
+        Q1groupAC5 = australiaC5;
+        Q1groupAV5 = australiaV5;
+        Q1groupAD5 = australiaD5;
         FQ2groupA = "Australia";
     }
 
@@ -1978,6 +1957,13 @@ int main () {
         Q2groupAattack = australiaattack;
         Q2groupAmidfield = australiamidfield;
         Q2groupAdeffence = australiadeffence;
+        Q1groupAf = faustralia;
+        Q1groupAcost = australiacost;
+        Q1groupApop = australiapop;
+        Q1groupA5 = australia5;
+        Q1groupAC5 = australiaC5;
+        Q1groupAV5 = australiaV5;
+        Q1groupAD5 = australiaD5;
         FQ2groupA = "Australia";
     }
 
@@ -1990,6 +1976,13 @@ int main () {
         Q2groupAattack = iranattack;
         Q2groupAmidfield = iranmidfield;
         Q2groupAdeffence = irandeffence;
+        Q1groupAf = firan;
+        Q1groupAcost = irancost;
+        Q1groupApop = iranpop;
+        Q1groupA5 = iran5;
+        Q1groupAC5 = iranC5;
+        Q1groupAV5 = iranV5;
+        Q1groupAD5 = iranD5;
         FQ2groupA = "Iran";
     }
 
@@ -1999,6 +1992,13 @@ int main () {
         Q2groupAattack = iranattack;
         Q2groupAmidfield = iranmidfield;
         Q2groupAdeffence = irandeffence;
+        Q1groupAf = firan;
+        Q1groupAcost = irancost;
+        Q1groupApop = iranpop;
+        Q1groupA5 = iran5;
+        Q1groupAC5 = iranC5;
+        Q1groupAV5 = iranV5;
+        Q1groupAD5 = iranD5;
         FQ2groupA = "Iran";
     }
 
@@ -2008,6 +2008,13 @@ int main () {
         Q2groupAattack = iranattack;
         Q2groupAmidfield = iranmidfield;
         Q2groupAdeffence = irandeffence;
+        Q1groupAf = firan;
+        Q1groupAcost = irancost;
+        Q1groupApop = iranpop;
+        Q1groupA5 = iran5;
+        Q1groupAC5 = iranC5;
+        Q1groupAV5 = iranV5;
+        Q1groupAD5 = iranD5;
         FQ2groupA = "Iran";
     }
 
@@ -2044,7 +2051,69 @@ int main () {
     else if (Q1groupAdeffence < Q2groupBdeffence) {
         Q2groupB += 1;
     }
+    
+    
+    //factor of unexpectancy
+    if (Q1groupAf > Q2groupBf) {
+        Q1groupA += 1;
+    }
 
+    else if (Q1groupAf < Q2groupBf) {
+        Q2groupB += 1;
+    }
+    //cost of teams
+    if (Q1groupAcost > Q2groupBcost) {
+        Q1groupA += 1;
+    }
+
+    else if (Q1groupAcost < Q2groupBcost) {
+        Q2groupB += 1;
+    }
+    //popuplation
+    if (Q1groupApop > Q2groupBpop) {
+        Q1groupA += 1;
+    }
+
+    else if (Q1groupApop < Q2groupBpop) {
+        Q2groupB += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q1groupA5 > Q2groupB5) {
+        Q1groupA += 1;
+    }
+
+    else if (Q1groupA5 < Q2groupB5) {
+        Q2groupB += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q1groupAC5 > Q2groupBC5) {
+        Q1groupA += 1;
+    }
+
+    else if (Q1groupAC5 < Q2groupBC5) {
+        Q2groupB += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q1groupAV5 > Q2groupBV5) {
+        Q1groupA += 1;
+    }
+
+    else if (Q1groupAV5 < Q2groupBV5) {
+        Q2groupB += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q1groupAD5 > Q2groupBD5) {
+        Q1groupA += 1;
+    }
+
+    else if (Q1groupAD5 < Q2groupBD5) {
+        Q2groupB += 1;
+    }
+    
+    
     //Game two's comparison
     //Attack
     if (Q1groupBattack > Q2groupAattack) {
@@ -2072,10 +2141,992 @@ int main () {
     else if (Q1groupBdeffence < Q2groupAdeffence) {
         Q2groupA += 1;
     }
+    int Q1groupAf, Q1groupBf, Q1groupCf, Q1groupDf, Q1groupEf, Q1groupFf, Q1groupGf, Q1groupHf, Q2groupAf, Q2groupBf, Q2groupCf, Q2groupDf, Q2groupEf, Q2groupFf, Q2groupGf, Q2groupHf;
+    
+    //factor of unexpectancy
+    if (Q1groupBf > Q2groupAf) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupBf < Q2groupAf) {
+        Q2groupA += 1;
+    }
+    //cost of teams
+    if (Q1groupBcost > Q2groupAcost) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupBcost < Q2groupAcost) {
+        Q2groupA += 1;
+    }
+    //popuplation
+    if (Q1groupBpop > Q2groupApop) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupBpop < Q2groupApop) {
+        Q2groupA += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q1groupB5 > Q2groupA5) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupB5 < Q2groupA5) {
+        Q2groupA += 1;
+    }
+    //# of goals conceded in last 5 games
+    if (Q1groupBC5 > Q2groupAC5) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupBC5 < Q2groupAC5) {
+        Q2groupA += 1;
+    }
+    //# of victories in last 5 games
+    if (Q1groupBV5 > Q2groupAV5) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupBV5 < Q2groupAV5) {
+        Q2groupA += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q1groupBD5 > Q2groupAD5) {
+        Q1groupB += 1;
+    }
+
+    else if (Q1groupBD5 < Q2groupAD5) {
+        Q2groupA += 1;
+    }
+
+    
+    
+    //Game three's comparison
+    //Attack
+    if (Q1groupCattack > Q2groupDattack) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCattack < Q2groupDattack) {
+        Q2groupD += 1;
+    }
+
+    //midfield
+    if (Q1groupCmidfield > Q2groupDmidfield) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCmidfield < Q2groupDmidfield) {
+        Q2groupD += 1;
+    }
+
+    //deffence
+    if (Q1groupCdeffence > Q2groupDdeffence) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCdeffence < Q2groupDdeffence) {
+        Q2groupD += 1;
+    }
+    
+    
+    //factor of unexpectancy
+    if (Q1groupCf > Q2groupDf) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCf < Q2groupDf) {
+        Q2groupD += 1;
+    }
+    //cost of teams
+    if (Q1groupCcost > Q2groupDcost) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCcost < Q2groupDcost) {
+        Q2groupD += 1;
+    }
+    //popuplation
+    if (Q1groupCpop > Q2groupDpop) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCpop < Q2groupDpop) {
+        Q2groupD += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q1groupC5 > Q2groupD5) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupC5 < Q2groupD5) {
+        Q2groupD += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q1groupCC5 > Q2groupDC5) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCC5 < Q2groupDC5) {
+        Q2groupD += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q1groupCV5 > Q2groupDV5) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCV5 < Q2groupDV5) {
+        Q2groupD += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q1groupCD5 > Q2groupDD5) {
+        Q1groupC += 1;
+    }
+
+    else if (Q1groupCD5 < Q2groupDD5) {
+        Q2groupD += 1;
+    }
+
+
+    //Game four's comparison
+    //Attack
+    if (Q2groupCattack > Q1groupDattack) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCattack < Q1groupDattack) {
+        Q1groupD += 1;
+    }
+
+    //midfield
+    if (Q2groupCmidfield > Q1groupDmidfield) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCmidfield < Q1groupDmidfield) {
+        Q1groupD += 1;
+    }
+
+    //deffence
+    if (Q2groupCdeffence > Q1groupDdeffence) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCdeffence < Q1groupDdeffence) {
+        Q1groupD += 1;
+    }
+    
+    
+    //factor of unexpectancy
+    if (Q2groupCf > Q1groupDf) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCf < Q1groupDf) {
+        Q1groupD += 1;
+    }
+    //cost of teams
+    if (Q2groupCcost > Q1groupDcost) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCcost < Q1groupDcost) {
+        Q1groupD += 1;
+    }
+    //popuplation
+    if (Q2groupCpop > Q1groupDpop) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCpop < Q1groupDpop) {
+        Q1groupD += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q2groupC5 > Q1groupD5) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupC5 < Q1groupD5) {
+        Q1groupD += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q2groupCC5 > Q1groupDC5) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCC5 < Q1groupDC5) {
+        Q1groupD += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q2groupCV5 > Q1groupDV5) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCV5 < Q1groupDV5) {
+        Q1groupD += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q2groupCD5 > Q1groupDD5) {
+        Q2groupC += 1;
+    }
+
+    else if (Q2groupCD5 < Q1groupDD5) {
+        Q1groupD += 1;
+    }
+
+
+    //Game five's comparison
+    //Attack
+    if (Q1groupEattack > Q2groupFattack) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEattack < Q2groupFattack) {
+        Q2groupF += 1;
+    }
+
+    //midfield
+    if (Q1groupEmidfield > Q2groupFmidfield) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEmidfield < Q2groupFmidfield) {
+        Q2groupF += 1;
+    }
+
+    //deffence
+    if (Q1groupEdeffence > Q2groupFdeffence) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEdeffence < Q2groupFdeffence) {
+        Q2groupF += 1;
+    }
+    
+    
+    //factor of unexpectancy
+    if (Q1groupEf > Q2groupFf) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEf < Q2groupFf) {
+        Q2groupF += 1;
+    }
+    //cost of teams
+    if (Q1groupEcost > Q2groupFcost) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEcost < Q2groupFcost) {
+        Q2groupF += 1;
+    }
+    //popuplation
+    if (Q1groupEpop > Q2groupFpop) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEpop < Q2groupFpop) {
+        Q2groupF += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q1groupE5 > Q2groupF5) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupE5 < Q2groupF5) {
+        Q2groupF += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q1groupEC5 > Q2groupFC5) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEC5 < Q2groupFC5) {
+        Q2groupF += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q1groupEV5 > Q2groupFV5) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupEV5 < Q2groupFV5) {
+        Q2groupF += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q1groupED5 > Q2groupFD5) {
+        Q1groupE += 1;
+    }
+
+    else if (Q1groupED5 < Q2groupFD5) {
+        Q2groupF += 1;
+    }
+
+
+    //Game six's comparison
+    //Attack
+    if (Q2groupEattack > Q1groupFattack) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEattack < Q1groupFattack) {
+        Q1groupF += 1;
+    }
+
+    //midfield
+    if (Q2groupEmidfield > Q1groupFmidfield) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEmidfield < Q1groupFmidfield) {
+        Q1groupF += 1;
+    }
+
+    //deffence
+    if (Q2groupEdeffence > Q1groupFdeffence) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEdeffence < Q1groupFdeffence) {
+        Q1groupF += 1;
+    }
+    
+    
+    //factor of unexpectancy
+    if (Q2groupEf > Q1groupFf) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEf < Q1groupFf) {
+        Q1groupF += 1;
+    }
+    //cost of teams
+    if (Q2groupEcost > Q1groupFcost) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEcost < Q1groupFcost) {
+        Q1groupF += 1;
+    }
+    //popuplation
+    if (Q2groupEpop > Q1groupFpop) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEpop < Q1groupFpop) {
+        Q2groupF += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q2groupE5 > Q1groupF5) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupE5 < Q1groupF5) {
+        Q1groupF += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q2groupEC5 > Q1groupFC5) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEC5 < Q1groupFC5) {
+        Q1groupF += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q2groupEV5 > Q1groupFV5) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupEV5 < Q1groupFV5) {
+        Q1groupF += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q2groupED5 > Q1groupFD5) {
+        Q2groupE += 1;
+    }
+
+    else if (Q2groupED5 < Q1groupFD5) {
+        Q1groupF += 1;
+    }
+
+
+    //Game seven's comparison
+    //Attack
+    if (Q1groupGattack > Q2groupHattack) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGattack < Q2groupHattack) {
+        Q2groupH += 1;
+    }
+
+    //midfield
+    if (Q1groupGmidfield > Q2groupHmidfield) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGmidfield < Q2groupHmidfield) {
+        Q2groupH += 1;
+    }
+
+    //deffence
+    if (Q1groupGdeffence > Q2groupHdeffence) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGdeffence < Q2groupHdeffence) {
+        Q2groupH += 1;
+    }
+    
+    
+    //factor of unexpectancy
+    if (Q1groupGf > Q2groupHf) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGf < Q2groupHf) {
+        Q2groupH += 1;
+    }
+    //cost of teams
+    if (Q1groupGcost > Q2groupHcost) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGcost < Q2groupHcost) {
+        Q2groupH += 1;
+    }
+    //popuplation
+    if (Q1groupGpop > Q2groupHpop) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGpop < Q2groupHpop) {
+        Q2groupH += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q1groupG5 > Q2groupH5) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupG5 < Q2groupH5) {
+        Q2groupH += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q1groupGC5 > Q2groupHC5) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGC5 < Q2groupHC5) {
+        Q2groupH += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q1groupGV5 > Q2groupHV5) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGV5 < Q2groupHV5) {
+        Q2groupH += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q1groupGD5 > Q2groupHD5) {
+        Q1groupG += 1;
+    }
+
+    else if (Q1groupGD5 < Q2groupHD5) {
+        Q2groupH += 1;
+    }
+
+
+    //Game eight's comparison
+    //Attack
+    if (Q2groupGattack > Q1groupHattack) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGattack < Q1groupHattack) {
+        Q1groupH += 1;
+    }
+
+    //midfield
+    if (Q2groupGmidfield > Q1groupHmidfield) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGmidfield < Q1groupHmidfield) {
+        Q1groupH += 1;
+    }
+
+    //deffence
+    if (Q2groupGdeffence > Q1groupHdeffence) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGdeffence < Q1groupHdeffence) {
+        Q1groupH += 1;
+    }
+    
+    
+    //factor of unexpectancy
+    if (Q2groupGf > Q1groupHf) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGf < Q1groupHf) {
+        Q1groupH += 1;
+    }
+    //cost of teams
+    if (Q2groupGcost > Q1groupHcost) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGcost < Q1groupHcost) {
+        Q1groupH += 1;
+    }
+    //popuplation
+    if (Q2groupGpop > Q1groupHpop) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGpop < Q1groupHpop) {
+        Q1groupH += 1;
+    }
+    
+    //# of goals score in last 5 games
+    if (Q2groupG5 > Q1groupH5) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupG5 < Q1groupH5) {
+        Q1groupH += 1;
+    }
+
+    //# of goals conceded in last 5 games
+    if (Q2groupGC5 > Q1groupHC5) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGC5 < Q1groupHC5) {
+        Q1groupH += 1;
+    }
+
+    //# of victories in last 5 games
+    if (Q2groupGV5 > Q1groupHV5) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGV5 < Q1groupHV5) {
+        Q1groupH += 1;
+    }
+    //# of defeats in last 5 games
+    if (Q2groupGD5 > Q1groupHD5) {
+        Q2groupG += 1;
+    }
+
+    else if (Q2groupGD5 < Q1groupHD5) {
+        Q1groupH += 1;
+    }
+
 
     cout << endl;
+     int QFgame1;
+    int QFgame2;
+    int QFgame3;
+    int QFgame4;
+    int QFgame5;
+    int QFgame6;
+    int QFgame7;
+    int QFgame8;
+    string FQFgame1;
+    string FQFgame2;
+    string FQFgame3;
+    string FQFgame4;
+    string FQFgame5;
+    string FQFgame6;
+    string FQFgame7;
+    string FQFgame8;
+    int QFgame1attack, QFgame2attack, QFgame3attack, QFgame4attack, QFgame5attack, QFgame6attack, QFgame7attack, QFgame8attack;
+    int QFgame1midfield, QFgame2midfield, QFgame3midfield, QFgame4midfield, QFgame5midfield, QFgame6midfield, QFgame7midfield, QFgame8midfield;
+    int QFgame1deffence, QFgame2deffence, QFgame3deffence, QFgame4deffence, QFgame5deffence, QFgame6deffence, QFgame7deffence, QFgame8deffence;
+    int QFgame1f, QFgame2f, QFgame3f, QFgame4f, QFgame5f, QFgame6f, QFgame7f, QFgame8f;
+    int QFgame1cost, QFgame2cost, QFgame3cost, QFgame4cost, QFgame5cost, QFgame6cost, QFgame7cost, QFgame8cost;
+    int QFgame1pop, QFgame2pop, QFgame3pop, QFgame4pop, QFgame5pop, QFgame6pop, QFgame7pop, QFgame8pop;
+    int QFgame15, QFgame25, QFgame35, QFgame45, QFgame55, QFgame65, QFgame75, QFgame85;
+    int QFgame1C5, QFgame2C5, QFgame3C5, QFgame4C5, QFgame5C5, QFgame6C5, QFgame7C5, QFgame8C5;
+    int QFgame1V5, QFgame2V5, QFgame3V5, QFgame4V5, QFgame5V5, QFgame6V5, QFgame7V5, QFgame8V5;
+    int QFgame1D5, QFgame2D5, QFgame3D5, QFgame4D5, QFgame5D5, QFgame6D5, QFgame7D5, QFgame8D5;
     
+    int Q1groupAattack, Q1groupBattack, Q1groupCattack, Q1groupDattack, Q1groupEattack, Q1groupFattack, Q1groupGattack, Q1groupHattack, Q2groupAattack, Q2groupBattack, Q2groupCattack, Q2groupDattack, Q2groupEattack, Q2groupFattack, Q2groupGattack, Q2groupHattack;
+    int Q1groupAmidfield, Q1groupBmidfield, Q1groupCmidfield, Q1groupDmidfield, Q1groupEmidfield, Q1groupFmidfield, Q1groupGmidfield, Q1groupHmidfield, Q2groupAmidfield, Q2groupBmidfield, Q2groupCmidfield, Q2groupDmidfield, Q2groupEmidfield, Q2groupFmidfield, Q2groupGmidfield, Q2groupHmidfield;
+    int Q1groupAdeffence, Q1groupBdeffence, Q1groupCdeffence, Q1groupDdeffence, Q1groupEdeffence, Q1groupFdeffence, Q1groupGdeffence, Q1groupHdeffence, Q2groupAdeffence, Q2groupBdeffence, Q2groupCdeffence, Q2groupDdeffence, Q2groupEdeffence, Q2groupFdeffence, Q2groupGdeffence, Q2groupHdeffence;
+    int Q1groupAf, Q1groupBf, Q1groupCf, Q1groupDf, Q1groupEf, Q1groupFf, Q1groupGf, Q1groupHf, Q2groupAf, Q2groupBf, Q2groupCf, Q2groupDf, Q2groupEf, Q2groupFf, Q2groupGf, Q2groupHf;
+    int Q1groupAcost, Q1groupBcost, Q1groupCcost, Q1groupDcost, Q1groupEcost, Q1groupFcost, Q1groupGcost, Q1groupHcost, Q2groupAcost, Q2groupBcost, Q2groupCcost, Q2groupDcost, Q2groupEcost, Q2groupFcost, Q2groupGcost, Q2groupHcost;
+    int Q1groupApop, Q1groupBpop, Q1groupCpop, Q1groupDpop, Q1groupEpop, Q1groupFpop, Q1groupGpop, Q1groupHpop, Q2groupApop, Q2groupBpop, Q2groupCpop, Q2groupDpop, Q2groupEpop, Q2groupFpop, Q2groupGpop, Q2groupHpop;
+    int Q1groupA5, Q1groupB5, Q1groupC5, Q1groupD5, Q1groupE5, Q1groupF5, Q1groupG5, Q1groupH5, Q2groupA5, Q2groupB5, Q2groupC5, Q2groupD5, Q2groupE5, Q2groupF5, Q2groupG5, Q2groupH5;
+    int Q1groupAC5, Q1groupBC5, Q1groupCC5, Q1groupDC5, Q1groupEC5, Q1groupFC5, Q1groupGC5, Q1groupHC5, Q2groupAC5, Q2groupBC5, Q2groupCC5, Q2groupDC5, Q2groupEC5, Q2groupFC5, Q2groupGC5, Q2groupHC5;
+    int Q1groupAV5, Q1groupBV5, Q1groupCV5, Q1groupDV5, Q1groupEV5, Q1groupFV5, Q1groupGV5, Q1groupHV5, Q2groupAV5, Q2groupBV5, Q2groupCV5, Q2groupDV5, Q2groupEV5, Q2groupFV5, Q2groupGV5, Q2groupHV5;
+    int Q1groupAD5, Q1groupBD5, Q1groupCD5, Q1groupDD5, Q1groupED5, Q1groupFD5, Q1groupGD5, Q1groupHD5, Q2groupAD5, Q2groupBD5, Q2groupCD5, Q2groupDD5, Q2groupED5, Q2groupFD5, Q2groupGD5, Q2groupHD5;
     //Round 1 match results
+    //game 1
+    if (Q1groupA > Q2groupB) {
+        cout << FQ1groupA <<" won "<< FQ2groupB << " in round 1" << endl;
+        QFgame1 = Q1groupA;
+        QFgame1attack = Q1groupAattack;
+        QFgame1midfield = Q1groupAmidfield;
+        QFgame1deffence = Q1groupAdeffence;
+        QFgame1f =
+        QFgame1cost = 
+        QFgame1pop =
+        QFgame15 =
+        QFgame1C5 =
+
+        
+        FQFgame1 = FQ1groupA;
+        
+    }
+
+    if (Q1groupA < Q2groupB) {
+        cout << FQ2groupB <<" won "<< FQ1groupA << " in round 1" << endl;
+        QFgame1 = Q2groupB;
+        QFgame1attack = Q2groupBattack;
+        QFgame1midfield = Q2groupBmidfield;
+        QFgame1deffence = Q2groupBdeffence;
+        
+        FQFgame1 = FQ2groupB;
+        
+    }
+
+    //game 2
+    if (Q2groupA > Q1groupB) {
+        cout << FQ2groupA <<" won "<< FQ1groupB << " in round 1" << endl;
+        QFgame2 = Q2groupA;
+        QFgame2attack = Q2groupAattack;
+        QFgame2midfield = Q2groupAmidfield;
+        QFgame2deffence = Q2groupAdeffence;
+       
+        FQFgame2 = FQ2groupA;
+        
+    }
+
+    if (Q2groupA < Q1groupB) {
+        cout << FQ1groupB <<" won "<< FQ2groupA << " in round 1" << endl;
+        QFgame2 = Q1groupB;
+        QFgame2attack = Q1groupBattack;
+        QFgame2midfield = Q1groupBmidfield;
+        QFgame2deffence = Q1groupBdeffence;
+        
+        FQFgame2 = FQ1groupB;
+        
+    }
+
+    //game 3
+
+    //game 4
+
+    //game 5
+
+    //game 6
+
+    //game 7
+
+    //game 8
+
+
+    
+    //Comparison of quarter-finals teams' attack
+    //Game one's comparison
+    //Attack
+
+    //midfield
+
+    //deffence
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Game two's comparison
+    //Attack
+
+    //midfield
+
+    //deffence
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Game three's comparison
+    //Attack
+
+    //midfield
+
+    //deffence
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Game four's comparison
+    //Attack
+
+    //midfield
+
+    //deffence
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Quarter-finals match results
+    //game 1
+
+    //game 2
+
+    //game 3
+
+    //game 4
+
+    
+    
+    //Comparison of semi-finals teams' attack
+    //Game one's comparison
+    //Attack
+
+    //midfield
+
+    //deffence
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Game two's comparison
+    //Attack
+
+    //midfield
+
+    //deffence
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Semi-finals match results
+    //game 1
+
+    //game 2
+
+    //Comparison of finals teams' attack
+    if (R1game1Fattack > R1game2Fattack) {
+        R1game1F += 1;
+    }
+
+    else if (R1game1Fattack < R1game2Fattack) {
+        R1game2F += 1;
+    }
+
+    //Comparison of finals teams' midfield
+    if (R1game1Fmidfield > R1game2Fmidfield) {
+        R1game1F += 1;
+    }
+
+    else if (R1game1Fmidfield < R1game2Fmidfield) {
+        R1game2F += 1;
+    }
+
+    //Comparison of finals teams' defence
+    if (R1game1Fdeffence > R1game2Fdeffence) {
+        R1game1F += 1;
+    }
+
+    else if (R1game1Fdeffence < R1game2Fdeffence) {
+        R1game2F += 1;
+    }
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    //Comparison of third place game's teams' attack
+    if (R1game1Tattack > R1game2Tattack) {
+        R1game1T += 1;
+    }
+
+    else if (R1game1Tattack < R1game2Tattack) {
+        R1game2T += 1;
+    }
+
+    //Comparison of third place game's teams' midfield
+    if (R1game1Tmidfield > R1game2Tmidfield) {
+        R1game1T += 1;
+    }
+
+    else if (R1game1Tmidfield < R1game2Tmidfield) {
+        R1game2T += 1;
+    }
+
+    //Comparison of third place game's teams' defence
+    if (R1game1Tdeffence > R1game2Tdeffence) {
+        R1game1T += 1;
+    }
+
+    else if (R1game1Tdeffence < R1game2Tdeffence) {
+        R1game2T += 1;
+    }
+
+    //factor of unexpectancy
+
+    //cost of teams
+
+    //popuplation
+
+    //# of goals score in last 5 games
+
+    //# of goals conceded in last 5 games
+
+    //# of victories in last 5 games
+
+    //# of defeats in last 5 games
+
+
+    cout << endl;
+
+    //Third Place
+    if (R1game1T > R1game2T) {
+       cout << FR1game1T << " are the third place winners";
+    }
+
+    else if (R1game1T < R1game2T) {
+       cout << FR1game2T << " are the third place winners";
+    }
+
+    cout << endl;
+
+    //Finals
+    if (R1game1F > R1game2F) {
+       cout << FR1game1F << " are the World Cup Champions!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+    }
+
+    else if (R1game1F < R1game2F) {
+       cout << FR1game2F << " are the World Cup Champions!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//Round 1 match results
     //game 1
     if (Q1groupA > Q2groupB) {
         cout << FQ1groupA <<" won "<< FQ2groupB << " in round 1" << endl;
@@ -2134,63 +3185,6 @@ int main () {
         FR1game2T = FQ2groupA;
     }
     
-    
-    //Comparison of finals teams' attack
-    if (R1game1Fattack > R1game2Fattack) {
-        R1game1F += 1;
-    }
-
-    else if (R1game1Fattack < R1game2Fattack) {
-        R1game2F += 1;
-    }
-
-    //Comparison of finals teams' midfield
-    if (R1game1Fmidfield > R1game2Fmidfield) {
-        R1game1F += 1;
-    }
-
-    else if (R1game1Fmidfield < R1game2Fmidfield) {
-        R1game2F += 1;
-    }
-
-    //Comparison of finals teams' defence
-    if (R1game1Fdeffence > R1game2Fdeffence) {
-        R1game1F += 1;
-    }
-
-    else if (R1game1Fdeffence < R1game2Fdeffence) {
-        R1game2F += 1;
-    }
-
-    //Comparison of third place game's teams' attack
-    if (R1game1Tattack > R1game2Tattack) {
-        R1game1T += 1;
-    }
-
-    else if (R1game1Tattack < R1game2Tattack) {
-        R1game2T += 1;
-    }
-
-    //Comparison of third place game's teams' midfield
-    if (R1game1Tmidfield > R1game2Tmidfield) {
-        R1game1T += 1;
-    }
-
-    else if (R1game1Tmidfield < R1game2Tmidfield) {
-        R1game2T += 1;
-    }
-
-    //Comparison of third place game's teams' defence
-    if (R1game1Tdeffence > R1game2Tdeffence) {
-        R1game1T += 1;
-    }
-
-    else if (R1game1Tdeffence < R1game2Tdeffence) {
-        R1game2T += 1;
-    }
-
-    cout << endl;
-
     //Third Place
     if (R1game1T > R1game2T) {
        cout << FR1game1T << " are the third place winners";
@@ -2209,30 +3203,6 @@ int main () {
 
     else if (R1game1F < R1game2F) {
        cout << FR1game2F << " are the World Cup Champions!!!!!!!!!!!!!!!!!!!!!!!!!!!";
-    }
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }*/
 
 }
